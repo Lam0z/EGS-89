@@ -1,0 +1,62 @@
+.footer {
+  @media (max-width: 1199px) {
+    padding: 0 30px;
+  }
+  @media (max-width: 991px) {
+    background: linear-gradient(270.28deg, #000051 0.37%, #000088 99.25%);
+    padding: 30px 15px 80px;
+    justify-content: space-between;
+    &__logo {
+      max-width: 200px;
+    }
+    &__contacts {
+      width: 30%;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    &__nav {
+      width: 70%;
+      .nav {
+        justify-content: flex-end;
+        &__list {
+          flex-direction: row;
+        }
+        &__item {
+          padding: 0 6px;
+          font-size: 16px;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+          &:after {
+            display: block;
+          }
+        }
+      }
+    }
+    &__apps {
+      width: 100%;
+      margin-top: 30px;
+    }
+    &__bottom {
+      margin-top: 20px;
+      border: none;
+      padding: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    &__contacts {
+      width: 100%;
+    }
+    &__bottom {
+      & div {
+        display: block;
+      }
+    }
+  }
+}

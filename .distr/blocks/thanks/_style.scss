@@ -1,0 +1,212 @@
+.thanks{
+	min-height: 100vh;
+	// font-family: "ProximaNovaExtraCondenced";
+	&__header{
+		background: #1A237B;
+		&-container{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-logo{
+			flex-shrink: 0;
+			// padding: 8px;
+		}
+		&-content{
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		
+		}
+		&-phone{
+			font-family: "ProximaNovaExtraCondenced", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 26px;
+			line-height: 110%;
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			&:hover{
+				opacity: 1;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+		}
+		&-btn{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			max-width: 240px;
+			min-height: 65px;
+			background: #49E1C6;
+			font-family: "ProximaNovaExtraCondenced", sans-serif;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 22px;
+			line-height: 110%;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			transition: 0.3s;
+			margin: 0 15px;
+			&:hover{
+				opacity: 1;
+				color: #FFFFFF;
+				background: #3ec9af;
+				text-decoration: none;
+			}
+		}
+		&-link{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			// width: 100%;
+			max-width: 290px;
+			min-height: 65px;
+			background: #244FE9;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 110%;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			margin: 0 auto;
+			padding-right: 68px;
+			padding-left: 68px;
+			&:hover{
+				opacity: 1;
+				background: #244FE9;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+		}
+	}
+	&__content{
+		min-height: calc(100vh - 65px - 80px);
+		background: url(../img/thanks/bg.jpg) center center no-repeat;
+		background-size: cover;
+		padding-top: 75px;
+		padding-bottom: 50px;
+	}
+	&__block{
+		max-width: 620px;
+		background: #FFFFFF;
+		padding: 40px;
+		margin: 0 auto;
+		&-wrapper{
+			max-width: 375px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		&-title{
+			font-family: "ProximaNovaExtraCondenced", sans-serif;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 61px;
+			line-height: 90%;
+			letter-spacing: -0.02em;
+			color: #000051;
+		}
+		&-subtitle{
+			font-family: "ProximaNovaExtraCondenced", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 34px;
+			line-height: 40px;
+			letter-spacing: -0.05em;
+			text-transform: uppercase;			
+			color: #000051;			
+		}
+		&-text{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 146%;
+			color: #001059;
+			margin: 20px auto 55px;
+		}
+		&-link{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			max-width: 290px;
+			min-height: 65px;
+			background: #244FE9;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 22px;
+			line-height: 110%;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			margin: 0 auto;
+			&:hover{
+				opacity: 1;
+				background: #244FE9;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__footer{
+		background: #1A237B;
+		padding: 14px 0;
+		&-container{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-text{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 110%;
+			color: #F3F3F7;
+			opacity: 0.9;
+		}
+		&-info{
+			a{
+				color: #fff;
+			}
+		}
+		&-link{
+			font-style: normal;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 110%;
+			color: #F3F3F7;
+			opacity: 0.9;
+			&:hover{
+				opacity: 1;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			&:last-child{
+				margin: 0;
+			}
+		}
+		&-phone{
+			font-family: "ProximaNovaExtraCondenced", sans-serif;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 18px;
+			line-height: 110%;
+			text-align: center;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			&:hover{
+				opacity: 1;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+		}
+	}
+}

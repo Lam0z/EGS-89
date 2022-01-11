@@ -1,0 +1,70 @@
+.for-who {
+  @media (max-width: 1480px) {
+    &__block {
+      &-img {
+        min-height: 125px;
+      }
+      &-descr {
+        font-size: 32px;
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    &__block {
+      height: 250px;
+      &-img {
+        min-height: 75px;
+      }
+      &-descr {
+        font-size: 22px;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    padding: 30px 0;
+  }
+  @media (max-width: 991px) {
+    &__title {
+      margin-bottom: 25px;
+    }
+    &__block {
+      width: 50%;
+      height: 330px;
+      &-bg {
+        display: none;
+        opacity: 0;
+      }
+      &-img {
+        min-height: 80px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &__block {
+      &-descr {
+        font-size: 26px;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    &__block {
+      padding: 10px;
+      height: 180px;
+      &-img {
+        max-width: 50px;
+        min-height: 50px;
+        margin-bottom: 10px;
+      }
+      &-descr {
+        font-size: 15px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    &__block {
+      &-descr {
+        font-size: 14px;
+      }
+    }
+  }
+}

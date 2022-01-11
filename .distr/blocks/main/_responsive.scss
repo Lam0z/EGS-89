@@ -1,0 +1,146 @@
+.main {
+  @media (max-width: 1480px) {
+    &__title {
+      max-width: 80%;
+    }
+    &__subtitle {
+      font-size: 54px;
+      bottom: 95px;
+    }
+    &__form {
+      padding-top: 20px;
+      .form {
+        &__title {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    height: auto;
+    &__title {
+      max-width: 90%;
+      margin-bottom: 100px;
+    }
+    &__subtitle {
+      bottom: 75px;
+      font-size: 46px;
+    }
+    &__date {
+      font-size: 26px;
+      top: -45px;
+      &-text {
+        top: 0;
+      }
+    }
+    &__button {
+      margin: 0 auto 50px;
+    }
+  }
+  @media (max-width: 991px) {
+    &__content {
+      padding-bottom: 60px;
+    }
+    &__subtitle {
+      bottom: 50px;
+    }
+    &__date {
+      top: -60px;
+      font-size: 22px;
+    }
+    &__lines {
+      height: 30px;
+    }
+    &__line {
+      &-list {
+        font-size: 14px;
+        height: 30px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 165px;
+    }
+    &__date {
+      font-size: 24px;
+      top: -80px;
+      &-text {
+        top: -30px;
+      }
+    }
+    &__subtitle {
+      font-size: 38px;
+      line-height: 1;
+      bottom: -60px;
+    }
+    &__description {
+      bottom: -120px;
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 575px) {
+    background: url("../img/main/main_bg.jpg") no-repeat 20% center / cover;
+    padding-top: 150px;
+    & video {
+      display: none;
+    }
+    &__title {
+      margin-bottom: 150px;
+      text-align: center;
+    }
+    &__date {
+      font-size: 18px;
+      &-text {
+        top: -45px;
+        font-size: 20px;
+      }
+    }
+    &__subtitle {
+      font-size: 28px;
+      line-height: 1;
+      bottom: -90px;
+    }
+    &__description {
+      bottom: -130px;
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 375px) {
+    &__subtitle {
+      font-size: 26px;
+    }
+
+    &__description {
+      bottom: -130px;
+      font-size: 10px;
+    }
+    &__button {
+      margin-top: 60px;
+    }
+    &__date {
+      font-size: 16px;
+      &-text {
+        font-size: 18px;
+      }
+    }
+  }
+  @media (max-width: 320px) {
+    padding-top: 120px;
+    &__title {
+      margin-bottom: 145px;
+    }
+    &__subtitle {
+      font-size: 32px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .page-scrolled {
+    .main__reg-btn {
+      bottom: 15px;
+      font-size: 22px;
+    }
+  }
+}

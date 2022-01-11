@@ -1,0 +1,55 @@
+.form{
+	&__main {
+		background: #000080;
+	}
+	&__content{
+		padding: 100px 0;
+		max-width: 670px;
+		width: 100%;
+		margin: 0 auto;
+		.form {
+			&__subtitle {
+				font-family: 'Gilroy';
+				font-weight: 900;
+				font-size: 22px;
+				line-height: 100%;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				margin-bottom: 20px;
+			}
+			&__flex {
+				display: flex;
+				.form__item {
+					&:nth-child(1){
+						margin-right: 15px;
+					}
+				}
+			}
+			&__items {
+				flex-direction: column;
+			}
+			&__item {
+				max-width: 100%;
+				margin-right: 0;
+				margin-bottom: 30px;
+				flex: auto;
+				&_button {
+					max-width: 250px;
+					width: 100%;
+					margin: 0 auto !important;
+				}
+			}
+			&__footer {
+				margin-bottom: 30px;
+			}
+			select {
+				color: #FFFFFF;
+				overflow: hidden;
+			}
+			&__footer-text {
+				color: #FFFFFF;
+			}
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+.form{
+	@media (max-width: 767px) {
+		&__content{
+			padding: 60px 0;
+			.form {
+				&__subtitle {
+					font-size: 18px;
+				}
+				&__flex {
+					flex-direction: column;
+					.form__item {
+						&:nth-child(1){
+							margin-right: 0;
+						}
+					}
+				}
+				&__item {
+					margin-bottom: 20px;
+				}
+				&__footer {
+					margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

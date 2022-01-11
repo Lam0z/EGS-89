@@ -1,0 +1,40 @@
+.video {
+  @media (max-width: 1199px) {
+    &__link{
+      min-height: 465px;
+      &-play{
+        &-img{
+          max-width: 65px;
+        }
+        &-text{
+          font-size: 26px;
+        }
+      }
+    }
+    
+  }
+  @media (max-width: 991px) {
+    padding: 50px 0;
+  }
+  @media (max-width: 767px) {
+    &__link{
+      &-play{
+      max-width: 45%;
+      }
+    }
+  }
+  @media (max-width: 575px) {
+    padding: 30px 0;
+    &__link {
+      min-height: 300px;
+      &-play{
+        &-img{
+          max-width: 35px;
+        }
+        &-text{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

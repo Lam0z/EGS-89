@@ -1,0 +1,99 @@
+.header {
+  @media (max-width: 1480px) {
+    .nav {
+      &__item {
+        font-size: 22px;
+      }
+    }
+    &__reg-btn,
+    &__dnload-btn,
+    &__callme {
+      font-size: 18px;
+    }
+   
+    &__phone {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 1366px) {
+    .nav {
+      &__item {
+        font-size: 20px;
+      }
+    }
+  }
+  @media (max-width: 1199px) {
+    .nav {
+      &__item {
+        font-size: 18px;
+      }
+    }
+    &__reg-btn,
+    &__dnload-btn,
+    &__callme {
+      font-size: 15px;
+    }
+    &__date {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 991px) {
+    // position: relative;
+    .row {
+      min-height: 66px;
+    }
+    &__box{
+      order:2;
+    }
+    .nav {
+      &__item {
+        font-size: 48px;
+      }
+    }
+    &__reg-btn,
+    &__callme {
+      display: none;
+    }
+    &__dnload-btn {
+      display: none;
+      max-width: 100%;
+      font-size: 20px;
+    }
+    &__lang {
+      display: flex;
+      align-items: center;
+    }
+    &__callme,
+    &__phone {
+      font-size: 20px;
+    }
+    &__logo-box{
+      flex: 0 0 65%;
+    max-width: 65%;
+    }
+  }
+  @media (max-width: 767px) {
+    min-height: auto;
+    padding: 5px 0;
+    .row {
+      min-height: auto;
+    }
+    .nav {
+      &__item {
+        font-size: 28px;
+      }
+    }
+    &__logo-box{
+      width: 66%;
+    }
+  }
+  @media (max-width: 360px) {
+    &__phone {
+      font-size: 18px;
+    }
+    &__logo{
+      width: 140px;
+    }
+  }
+
+}

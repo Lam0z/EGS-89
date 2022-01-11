@@ -1,0 +1,132 @@
+.for-who {
+  padding: 50px 0;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    color: #FFFFFF;
+  }
+  &__block {
+    position: relative;
+    width: 25%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    &-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      transition: .2s;
+      opacity: 1;
+    }
+    &-img {
+      max-width: 45%;
+      min-height: 145px;
+      margin-bottom: 20px;
+      opacity: 1;
+    }
+    &-descr {
+      font-family: "ProximaNovaExtraCondenced", sans-serif;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 110%;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+    &:nth-child(1) {
+      background: #F86262;
+      .for-who__block-bg {
+        opacity: 0;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(2) {
+      background: #3793C7;
+      .for-who__block-bg {
+        opacity: 1;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 0;
+        }
+      }
+    }
+    &:nth-child(3) {
+      background: #66BDD7;
+      .for-who__block-bg {
+        opacity: 0;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(4) {
+      background: #E66FB6;
+      .for-who__block-bg {
+        opacity: 1;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 0;
+        }
+      }
+    }
+    &:nth-child(5) {
+      background: #DC3F3F;
+      .for-who__block-bg {
+        opacity: 1;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 0;
+        }
+      }
+    }
+    &:nth-child(6) {
+      background: #EEA62C;
+      .for-who__block-bg {
+        opacity: 0;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(7) {
+      background: #B47FDD;
+      .for-who__block-bg {
+        opacity: 1;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 0;
+        }
+      }
+    }
+    &:nth-child(8) {
+      background: #63BC5C;
+      .for-who__block-bg {
+        opacity: 0;
+      }
+      &:hover {
+        .for-who__block-bg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

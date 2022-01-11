@@ -1,0 +1,90 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 65px;
+  color: #ffffff;
+  &__contacts {
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 50px;
+  }
+  &__phone {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-left: 30px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url("../img/footer/phone_icon.png") no-repeat 0 0 / cover;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__logo {
+    padding: 25px 0;
+    width: 100%;
+  }
+  &__nav {
+    width: 40%;
+    .nav {
+      height: initial;
+      .container {
+        padding: 0;
+      }
+      &__list {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &__item {
+        font-size: 14px;
+        padding: 0;
+        position: relative;
+        margin-bottom: 10px;
+        &:after {
+          display: none;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__apps {
+    width: 100%;
+    &-descr {
+      text-transform: uppercase;
+      p {
+        font-family: $ProximaExtraCond;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__bottom {
+    width: 100%;
+    border-top: 1px solid #ffffff;
+    padding-top: 15px;
+    font-size: 10px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.51);
+    margin-top: 50px;
+    & div {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    & a {
+      color: rgba(255, 255, 255, 0.51);
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.header {
+  color: #ffffff;
+  width: 100%;
+  max-width: 1920px;
+  position: fixed;
+  left: auto;
+  right: auto;
+  top: 0;
+  z-index: 101;
+  margin: 0 auto;
+  background: #000051;
+  box-shadow: 3px 0px 18px rgba(24, 19, 92, 0.42);
+  min-height: 60px;
+  &__date {
+    display: none;
+    font-family: $ProximaExtraCond;
+    font-size: 26px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__navs{
+    flex: 0 0 52.333333%;
+    justify-content: flex-end;
+  }
+  .nav {
+    &__item {
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+  &__box{
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+
+    
+  }
+  &__language{
+    padding-left: 3px;
+    opacity: 50%;
+    &:last-child{
+     padding-right: 3px;
+    }
+    &-img{
+      max-width: 23px;
+      width: 100%;
+    }
+    &-active{
+      opacity: 1;
+    }
+
+  }
+  &__reg-btn {
+    font-family: $ProximaExtraCond;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: auto;
+  }
+  &__dnload-btn {
+    max-width: 50%;
+    height: 66px;
+    font-size: 18px;
+  }
+  &__callme {
+    font-family: $ProximaExtraCond;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    // margin-bottom: 10px;
+  }
+  &__phone {
+    font-family: $ProximaExtraCond;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__menu {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  &__lang {
+    width: 100%;
+    &-wrap {
+      display: flex;
+      border: 1px solid #625296;
+      border-radius: 190px;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 70px;
+      height: 30px;
+      padding: 3px;
+    }
+    &-ru,
+    &-en {
+      max-width: 48%;
+      &.disabled {
+        opacity: 0.5;
+        cursor: default;
+        &:hover,
+        &:active,
+        &:focus {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &-min{
+    max-width: 18%;
+  }
+}

@@ -1,0 +1,22 @@
+.form {
+  @media (max-width: 991px) {
+    &_gorizontal {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    &_gorizontal & {
+      &__items {
+        flex-direction: column;
+      }
+      &__item {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 32px;
+    }
+  }
+}

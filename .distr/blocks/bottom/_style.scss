@@ -1,0 +1,105 @@
+.bottom {
+  color: #ffffff;
+  display: flex;
+  &__left {
+    background: url('../img/bottom/bottom_bg.jpg') no-repeat center center / cover;
+    width: 65%;
+    padding: 90px 80px 90px 0;
+    .container {
+      max-width: 1000px;
+    }
+    .footer{
+      display: none;
+    }
+  }
+  &__date {
+    font-family: "ProximaNovaExtraCondenced", sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    margin: 0 auto 60px;
+    text-align: center;
+    padding-left: 100px;
+    max-width: 570px;
+    span{
+      font-family: "Proxima Nova", sans-serif;
+      display: block;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      font-size: 15px;
+      line-height: 107%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-top: 10px;
+    }
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__triggers {
+    font-family: "ProximaNovaExtraCondenced";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    max-width: 850px;
+    padding-left: 100px;
+    & li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &::before {
+        position: absolute;
+        content: "";
+        width: 13px;
+        height: 13px;
+        left: 0;
+        top: 9px;
+      }
+      &:nth-child(1) {
+        &::before {
+          background: url("../img/bottom/trigger_icon_1.png") no-repeat 0 0 / cover;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          background: url("../img/bottom/trigger_icon_2.png") no-repeat 0 0 / cover;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          background: url("../img/bottom/trigger_icon_3.png") no-repeat 0 0 / cover;
+        }
+      }
+    }
+  }
+  &__right {
+    background: #000051;
+    max-width: 670px;
+    width: 35%;
+    padding: 70px 0 30px;
+    .form {
+      padding: 0 65px 40px;
+      max-width: 100%;
+      &__title {
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 0.9;
+        letter-spacing: -0.02em;
+        text-align: left;
+      }
+      &__button {
+        max-width: 330px;
+      }
+    }
+  }
+  &__btn{
+    display: none;
+  }
+}

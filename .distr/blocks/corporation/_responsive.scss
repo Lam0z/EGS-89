@@ -1,0 +1,46 @@
+.corporation {
+  @media (max-width: 1580px) {
+    padding: 80px 0;
+    &-title {
+      margin-bottom: 40px;
+    }
+    &__flex {
+      margin-bottom: 80px;
+      &-card {
+        max-width: 31%;
+      }
+    }
+  }
+  @media (max-width: 1080px) {
+    padding: 60px 0;
+    &-title {
+      margin-bottom: 35px;
+    }
+    &__flex {
+      margin-bottom: 70px;
+      &-card {
+        max-width: 46%;
+      }
+    }
+  }
+  @media (max-width: 616px) {
+    padding: 40px 0;
+    &-title {
+      margin-bottom: 25px;
+      font-size: 32px;
+    }
+    &__flex {
+      margin-bottom: 50px;
+      &-card {
+        max-width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media (max-width: 359px) {
+    &-title {
+      font-size: 28px;
+    }
+  }
+}
